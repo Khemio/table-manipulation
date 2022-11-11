@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <h1>Creating table row (tr) links</h1>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>
+            <input type="text" class="search-input" placeholder="Name">
+          </th>
+          <th>
+            <input type="text" class="search-input" placeholder="Age">
+          </th>
+          <th>
+            <input type="text" class="search-input" placeholder="Occupation">
+          </th>
+          <th>
+            <input type="text" class="search-input" placeholder="Country">
+          </th>
+          <!-- <th>Name</th>
+          <th>Age</th>
+          <th>Occupation</th> -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-href="http://www.google.com">
+          <td>Dom</td>
+          <td>34</td>
+          <td>Web Developer</td>
+          <td>USA</td>
+        </tr>
+        <tr data-href="http://www.wikipedia.com">
+          <td>Andrei</td>
+          <td>27</td>
+          <td>Web Developer</td>
+          <td>Russia</td>
+        </tr>
+        <tr data-href="http://www.intel.com">
+          <td>Jack</td>
+          <td>28</td>
+          <td>Game Designer</td>
+          <td>Russia</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

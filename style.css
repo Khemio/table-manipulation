@@ -1,0 +1,86 @@
+:root {
+  box-sizing: border-box;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #213547;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 1em, 0;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  min-width: 400px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 1.5em;
+  line-height: 1.1;
+}
+
+table {
+  border-collapse: collapse;
+  /* border: 1px solid #213547; */
+  margin: 2em 0;
+  line-height: 2em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+table thead tr{
+  background-color: #00ddb1;
+  /* color: #ffffff; */
+  text-align: left;
+  font-weight: bold;
+}
+
+table th,
+table td,
+.search-input {
+  padding: .75em;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #00ddb1;
+  color: #213547;
+  font-size: .9em;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #ddd;
+  transition: all 300ms;
+}
+
+table tbody tr[data-href] {
+  cursor: pointer;
+}
+
+table tbody tr.active-row {
+  color: #00ddb1;
+  font-weight: bold;
+}
+
+table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+  border-bottom: 2px solid #00ddb1;
+}
